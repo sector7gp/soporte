@@ -54,7 +54,7 @@
             <h1 class=\"cover-heading\">
             <?php
             if($_GET[w] !=1 ){
-              echo 'La página a la que querés acceder es solo accesible fuera de la red de Vialidad';
+              echo 'La página a la que querés acceder solo es accesible dentro de la red de Vialidad';
             }else {
               echo "No tés permiso para acceder a esta página.";
               }
