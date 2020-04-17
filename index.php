@@ -54,15 +54,16 @@
             <h1 class=\"cover-heading\">
             <?php
             if($_GET[w] !=1 ){
-              echo 'La página a la que querés acceder es solo accesible por VPN';
+              echo 'La página a la que querés acceder es solo accesible fuera de la red de Vialidad';
             }else {
-              echo "TENES QUE ESTAR CONECTADO A LA VPN! Por favor!";
+              echo "No tés permiso para acceder a esta página.";
               }
             ?></h1>
             <p class="lead">Te recomendamos que tengas a mano tu número de seguimiento: </p>
             <p class="lead">
               <a href="https://soporte.vialidad.gob.ar/index.php?redirect=<?php echo $_GET[redirect]; ?>&w=1"class="btn btn-lg btn-default"> # <?php if(isset($_GET[redirect])) {echo $_GET[redirect];}else{ echo "Sin Ticket";} ?></a>
             </p>
+            <p class="lead">Por favor comunicate al 011 6089 8999</p>
           </div>
 
           <div class="mastfoot">
