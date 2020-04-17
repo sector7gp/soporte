@@ -61,7 +61,7 @@
             ?></h1>
             <p class="lead">Te recomendamos que tengas a mano tu número de seguimiento: </p>
             <p class="lead">
-              <a href="https://soporte.vialidad.gob.ar/index.php?redirect=<?php echo $_GET[redirect]; ?>&w=1"class="btn btn-lg btn-default"> # <?php if(isset($_GET[redirect])) {echo $_GET[redirect];}else{ echo "Sin Ticket"} ?></a>
+              <a href="https://soporte.vialidad.gob.ar/index.php?redirect=<?php echo $_GET[redirect]; ?>&w=1"class="btn btn-lg btn-default"> # <?php if(isset($_GET[redirect])) {echo $_GET[redirect];}else{ echo "Sin Ticket";} ?></a>
             </p>
           </div>
 
