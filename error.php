@@ -32,15 +32,7 @@
   </head>
 
   <body>
-<?php
-  if(isset($_GET[redirect]))
-    {
-      $ticket = explode("_",$_GET[redirect]);
-    }else{
-      header("Location: error.php");
-      $ticket[0] = "Sin Ticket";
-    }
-?>
+
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -59,19 +51,10 @@
           </div>
 
           <div class="inner cover">
-            <h1 class=\"cover-heading\">
-            <?php
-            if($_GET[w] !=1 ){
-              echo 'Parece que estas conectado a internet pero no a la red de Vialidad...';
-            }else {
-              echo "No tés permiso para acceder a esta página.";
-              }
-            ?></h1>
-            <p class="lead">Este sitio web, solo funciona estando conectado a nuestra red. <br> Si necesitas saber sobre tú requerimiento, podés contactarnos e indicarnos este número: </p>
-            <p class="lead">
-              <a href="https://soporte.vialidad.gob.ar/index.php?redirect=<?php echo $_GET[redirect]; ?>&w=1"class="btn btn-primary  btn-lg btn-block"> <?php echo $ticket[1]; ?></a>
-            </p>
-            <p class="lead">Ante cualquier duda o consulta comunicate al *611 desde un teléfono IP, al 011-6089-8999 desde afuera o
+            <h1 class=\"cover-heading\">Parece que estás conectado a internet pero no a la red de Vialidad...</h1>
+            <p class="lead">Este sitio web, solo funciona estando conectado a nuestra red.</p>
+
+            <p class="lead">Ante cualquier duda o consulta comunicate al 011-6089-8999 o
 desde tu correo de la repartición <a href="mailto:tac@vialidad.gob.ar">tac@vialidad.gob.ar</a> para la generación de una solicitud.</p>
           </div>
 
