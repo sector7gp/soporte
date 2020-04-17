@@ -64,7 +64,7 @@
             if($_GET[w] !=1 ){
               echo 'Parece que estas conectado a internet pero no a la red de Vialidad...';
             }else {
-              echo "No tés permiso para acceder a esta página.";
+              echo "No tenés permiso para acceder a esta página.";
               }
             ?></h1>
             <p class="lead">Este sitio web, solo funciona estando conectado a nuestra red. <br> Si necesitas saber sobre tú requerimiento, podés contactarnos e indicarnos este número: </p>
